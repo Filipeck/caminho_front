@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso do Checkbox e Radio</title>
+</head>
+<body>
+    <H1>Você selecionou: Pizza de Bacon c/ Calabresa</H1>
+
+    <form method="post" action="#">
+        <p>Quais opcionais deseja adicionar?</p>
+        <input type="checkbox" name="opcional[]" value="queijo"> + queijo <br>
+        <input type="checkbox" name="opcional[]" value="bacon"> + bacon <br>
+        <input type="checkbox" name="opcional[]" value="cebola"> + cebola <br>
+        <input type="checkbox" name="opcional[]" value="calabresa"> + Calabresa <br>
+        <input type="checkbox" name="opcional[]" value="azeitona" disabled> + Azeitona
+        <!--O uso do [] informa ao servidor que o que está sendo encaminhado para ele é uma lista, caso não use o valor será substituido-->
+        
+        <p>Borda recheada?</p>
+        <input type="radio" name="borda" value="sim"> Sim <br>
+        <input type="radio" name="borda" value="nao"> Não <br>
+
+        <p>Selecione sua bebida: </p>
+        <input type="radio" name="bebida" value="Suco"> Suco <br>
+        <input type="radio" name="bebida" value="Água"> Água <br>
+        <input type="radio" name="bebida" value="Refrigerante"> Refrigerante <br>
+        <input type="radio" name="bebida" value="Cerveja"> Cerveja <br> <br>
+
+        <button type="submit">Enviar Pedido</button>
+    </form>
+</body>
+</html>
